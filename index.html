@@ -28,7 +28,7 @@
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#galeria">Galeria</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#linksTab">Links</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#login">Login</a>
@@ -133,20 +133,47 @@
         </div>
       </div>
     </section>
-    <!-- About Section -->
-    <section class="bg-primary text-white mb-0" id="about">
+ 
+    <section class="text-black mb-0" id="linksTab">
       <div class="container">
-        <h2 class="text-center text-uppercase text-white">About</h2>
-        <hr class="star-light mb-5">
-        <div class="row">
-          <div class="col-lg-4 ml-auto">
-            <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+        <div class="container p-t-md">
+        <h2 class="text-center text-uppercase text-black">Links</h2>
+        <hr class="star-light mb-5">          
+          <div class="row">
+              <div class="col-md-6">
+                  <ul class="nav nav-tabs">
+                      <li class="nav-item">
+                          <a class="nav-link active" data-toggle="tab" href="#currentPreferences">Link 1</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" data-toggle="tab" href="#alternative">Linkedin </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" data-toggle="tab" href="#link">Link 3</a>
+                      </li>
+                  </ul>
+                  <div class="tab-content">
+                      <div role="tabpanel" class="tab-pane active" id="currentPreferences">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      </div>
+                      <div role="tabpanel" class="tab-pane fade in" id="alternative">
+                          <hr class="star-light mb-5">          
+                          <a href="https://www.linkedin.com/in/jhonny-vasquez-674995ab/" target="_blank" class="btn btn-primary">My linkedin</a>
+                      </div>
+                       <div role="tabpanel" class="tab-pane fade in" id="link">
+                          <hr class="star-light mb-5">          
+                          <a href="https://github.com/vanckruz" target="_blank" class="btn btn-primary">My github</a>
+                      </div>
+                  </div>
+              </div>
+
           </div>
-          <div class="col-lg-4 mr-auto">
-            <p class="lead">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-          </div>
-        </div>
-      </div>
+      </div>      
     </section>
 
     <section id="login">
@@ -160,19 +187,19 @@
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                   <label>Email</label>
                   <input class="form-control" id="email" type="email" placeholder="jhonnyvanckruz@gmail.com">
-                  <p class="help-block text-danger"></p>
+                  <p id="erroremail"></p>
                 </div>
               </div>
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                   <label>Clave</label>
-                  <input class="form-control" id="name" type="password" placeholder="****">
-                  <p class="help-block text-danger"></p>
+                  <input class="form-control" id="pass" type="password" placeholder="****">
+                  <p id="errorpass"></p>
                 </div>
               </div>
               <div id="success"></div>
               <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Login</button>
+                <button type="submit" class="btn btn-primary btn-xl" id="loginButton">Login</button>
               </div>
             </form>
           </div>

@@ -396,3 +396,6 @@ a:focus, a:hover, a:active {
   height: 150px;
   margin: auto;
 }
+#erroremail, #errorpass{
+  color: red;
+}
